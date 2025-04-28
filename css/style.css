@@ -1,0 +1,380 @@
+/* 1 rem = 16px*/
+/* font-size: 62,5; Es para que 1 rem sea de 10px*/
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+/*   font-family: "Cormorant Garamond", serif; */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:"Cormorant Garamond", serif ;
+    background-color:#ECDFCC ;
+    font-size: 62,5%; 
+}
+
+/* header */
+.logo{
+    width: 120px;
+    border-radius: 180px 180px 180px 180px;
+}
+
+.container-fluid{
+    background-color: #758066;
+}
+.btn.btn-outline-success{
+    color: antiquewhite;
+}
+
+header li{
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+
+}
+.navbar-brand{
+    color: white;
+    font-size: 2.5rem;
+    margin-right: 900px;
+    font-size: bold;
+}
+
+
+header h1{
+    margin-block-end: 2px;
+    color:antiquewhite ;
+    background-color: #697565;
+    padding-left:5px ;
+    
+}
+.nav-link{
+    color: antiquewhite;
+}
+.dropdown-menu{
+    background-color: antiquewhite;
+}
+
+
+
+/* BODY */
+
+main{
+    margin-bottom: 5%;
+}
+h2{
+    text-align: center;
+    margin-top: 1%;
+    text-decoration: underline lightgrey;
+}
+
+main div{
+    display:flex;
+    justify-content: center;
+}
+main iframe{
+    width: 45%;
+    margin-top: 8px;
+}
+main section p{
+    color: #1E201E;
+    font-weight: bold;
+    margin-top: 20%;
+    font-size: 1.5rem;
+    margin-left: 20%;
+
+}
+main img{
+    height: 380px ;
+    margin-top: 2%;
+    margin-left: 3%;    
+    border-radius: 10px 10px 10px 10px;
+    
+}
+main p{
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+main label{
+    font-weight: bold;
+    margin-left: 20%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    border-radius: 10px 10px 10px 10px;
+}
+main input{
+    margin-top: 10%;
+    margin-bottom: 20%;
+}
+main section img{
+    margin-left: 20%
+}
+/* Grid de index */
+.contenedor-grid{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "imagen1 imagen2 imagen3"
+    "texto1 texto2 texto3"
+    "imagen4 imagen5 imagen6"
+    "texto4 texto5 texto6"
+    ;
+    grid-template-columns: 30% 30% 30% ;
+    grid-template-rows: 70px 280px 150px 280px  ;
+    justify-items: center;
+
+}
+.titulo{
+    grid-area: titulo;
+}
+.img1{
+    grid-area: imagen1;
+}
+.img2{
+    grid-area: imagen2;
+}
+.img3{
+    grid-area: imagen3;
+}
+.txt1{
+    grid-area: texto1;
+}
+.txt2{
+    grid-area: texto2;
+}
+.txt3{
+    grid-area: texto3;
+}
+.img4{
+    grid-area: imagen4;
+}
+.img5{
+    grid-area: imagen5;
+}
+.img6{
+    grid-area: imagen6;
+}
+.txt4{
+    grid-area: texto4;
+}
+.txt5{
+    grid-area: texto5;
+}
+.txt6{
+    grid-area: texto6;
+}
+/* Fin Grid index */
+
+/* Grid Mates */
+.grid-mates{
+    display: grid;
+    grid-template-areas: 
+    "img-1 img-2 img-3"
+    "txt-1 txt-2 txt-3"
+    "img-4 img-5 img-6"
+    "txt-4 txt-5 txt-6"
+    ;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 280px 150px 280px 150px;
+}
+.img-1{
+    grid-area: img-1;
+}
+.img-2{
+    grid-area: img-2;
+}
+.img-3{
+    grid-area: img-3;
+}
+.txt-1{
+    grid-area: txt-1;
+}
+.txt-2{
+    grid-area: txt-2;
+}
+.txt-3{
+    grid-area: txt-3;
+}
+.img-4{
+    grid-area: img-4;
+}
+.img-5{
+    grid-area: img-5;
+}
+.img-6{
+    grid-area: img-6;
+}
+.txt-4{
+    grid-area: txt-4;
+}
+.txt-5{
+    grid-area: txt-5;
+}
+.txt-6{
+    grid-area: txt-6;
+}
+/* fin grid "mates" */
+
+.nosotros{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    color: #1E201E;
+    font-size: 1.5rem;
+    
+}
+.envios{
+    margin-left: 10%;
+    margin-top: 2%;
+    font-weight: bold;
+    font-size: larger;
+}
+
+/* Grid Productos */
+
+.grid-productos{
+    display: grid;
+    grid-template-areas: 
+    "imagen1 imagen2 imagen3"
+    "texto1 texto2 texto3"
+    "imagen4 imagen5 imagen6"
+    "texto4 texto5  texto6"
+    ;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 390px 50px 390px 100px;
+    margin-left: 10%;
+    
+}
+.imagen1{
+    grid-area: imagen1;
+}
+.imagen2{
+    grid-area: imagen2;
+}
+.imagen3{
+    grid-area: imagen3;
+}
+.texto1{
+    grid-area: texto1;
+}
+.texto2{
+    grid-area: texto2;
+}
+.texto3{
+    grid-area: texto3;
+}
+.imagen4{
+    grid-area: imagen4;
+}
+.imagen5{
+    grid-area: imagen5;
+}
+.imagen6{
+    grid-area: imagen6;
+}
+.texto4{
+    grid-area: texto4;
+}
+.texto5{
+    grid-area: texto5;
+}
+.texto6{
+    grid-area: texto6;
+}
+
+
+/* footer */
+footer{
+    background-color: #1E201E;
+    padding: 50px;
+
+}
+section p{ 
+    color: aliceblue;
+    font-size: x-large;
+    margin: 0px 4px 4px 8px
+}
+.contacto{
+    width: 30px;
+    height: 25px;
+    text-align: left;
+    
+}
+.visit{
+    text-align: center;
+    margin-block-start: -9%;
+}
+.mapa{
+    width: 15%;
+    height: 20%;
+    margin-left: 35%;
+}
+.redes{
+    text-align: end;
+    margin-block-start: -9%;
+}
+.insta img{
+    width: 40px;
+    margin-inline-start: 85%;
+    margin-block-end: 4%;
+}
+
+/* Responsive */
+/* Movil */
+@media (max-width:480px){
+    header img{
+        margin-inline-start: 40%;
+    }
+    
+}
+
+/* tablet */
+@media (min-width:481px) and (max-width:769px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
