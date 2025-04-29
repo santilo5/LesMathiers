@@ -14,10 +14,10 @@ body{
 }
 
 /* header */
-/* .logo{
+.logo{
     width: 120px;
     border-radius: 180px 180px 180px 180px;
-} */
+}
 
 .container-fluid{
     background-color: #758066;
@@ -69,12 +69,13 @@ h2{
 
 main div{
     background-size: contain;
-    justify-items: center;
+    
     
 }
 main iframe{
     width: 45%;
     margin-top: 8px;
+    margin-left: 25%;
 }
 main section p{
     color: #1E201E;
