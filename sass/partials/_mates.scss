@@ -1,0 +1,64 @@
+
+main{
+    .grid-mates{
+        display: grid;
+        grid-template-areas: 
+        "img-1 img-2 img-3"
+        "txt-1 txt-2 txt-3"
+        "img-4 img-5 img-6"
+        "txt-4 txt-5 txt-6"
+        ;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 280px 150px 280px 150px;
+        img{
+            margin: 10%;
+            width: 200px;
+            height: 350px;
+        }
+        p{
+            margin: 23%;
+            font-weight: bold;
+
+        }
+    
+        img{
+            width: 280px; 
+        }
+        .img-1{
+            grid-area: img-1;
+        }
+        .img-2{
+            grid-area: img-2;
+        }
+        .img-3{
+            grid-area: img-3;
+        }
+        .txt-1{
+            grid-area: txt-1;
+        }
+        .txt-2{
+            grid-area: txt-2;
+        }
+        .txt-3{
+            grid-area: txt-3;
+        }
+        .img-4{
+            grid-area: img-4;
+        }
+        .img-5{
+            grid-area: img-5;
+        }
+        .img-6{
+            grid-area: img-6;
+        }
+        .txt-4{
+            grid-area: txt-4;
+        }
+        .txt-5{
+            grid-area: txt-5;
+        }
+        .txt-6{
+            grid-area: txt-6;
+        }
+    }
+}

@@ -1,12 +1,11 @@
+
 @use "./partials/mates";
 @use "./partials/productos";
 @use "./partials/envios";
 @use "./partials/nosotros";
-
-
-
-
-
+// partials mediaq
+@use "./partials/mediaq";
+@use "./partials/mediaqmates";
 
 
 
@@ -24,11 +23,13 @@ body{
     .logo{
         width: 120px;
         border-radius: 180px 180px 180px 180px;
+        align-content: center;
+        margin-right: 15%;
     }
     .navbar-brand{
         color: white;
         font-size: 2.5rem;
-        margin-right: 900px;
+        margin-right: 550px;
         font-size: bold;
     }
     .nav-link{
@@ -129,6 +130,42 @@ main{
 
     
     }
+}
+
+footer{
+    background-color: #1E201E;
+    padding: 50px;
+    section p{ 
+        color: aliceblue;
+        font-size: x-large;
+        margin: 0px 4px 4px 8px
+    }
+    .contacto{
+    width: 30px;
+    height: 25px;
+    text-align: left;
+    }      
+    .visit{
+    text-align: center;
+    margin-block-start: -9%;
+    }
+    .mapa{
+    width: 15%;
+    height: 20%;
+    margin-left: 35%;
+    }
+    .redes{
+    text-align: end;
+    margin-block-start: -9%;
+    }
+    .insta img{
+    width: 40px;
+    margin-inline-start: 85%;
+    margin-block-end: 4%;
+    }
+
+    
+
 }
 
 

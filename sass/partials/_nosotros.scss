@@ -1,0 +1,57 @@
+main{
+    .nosotros{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    color: #1E201E;
+    font-size: 1.5rem;
+    
+    }
+    .tit-nos{
+        text-align: center;
+        font-weight: bold;
+        margin-top: 1%;
+        font-size: 3rem;
+        animation-name: efecto;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+    }
+    @keyframes efecto {
+        0%{
+        color: green;
+    
+        }
+        25%{
+        color: rgb(82, 23, 23);
+        }
+        50%{
+        color: darkolivegreen;
+        }
+        75%{
+        color: darkslategray;
+        }
+        100%{
+
+        }
+    }
+    
+    h2{
+        margin-left: 2%;
+        text-decoration: underline rgb(94, 133, 75);
+        
+    
+    }
+    .carousel-inner{
+        width:  900px;
+        height: fit-content;
+        margin-left: 15%;
+        background-size: contain;
+        
+    }
+    p{
+        font-size:1.2rem;
+        margin-left: 2%;
+        font-weight: bolder;
+    }
+}

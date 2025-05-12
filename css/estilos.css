@@ -1,3 +1,280 @@
+main .grid-mates {
+  display: grid;
+  grid-template-areas: "img-1 img-2 img-3" "txt-1 txt-2 txt-3" "img-4 img-5 img-6" "txt-4 txt-5 txt-6";
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 280px 150px 280px 150px;
+}
+main .grid-mates img {
+  margin: 10%;
+  width: 200px;
+  height: 350px;
+}
+main .grid-mates p {
+  margin: 23%;
+  font-weight: bold;
+}
+main .grid-mates img {
+  width: 280px;
+}
+main .grid-mates .img-1 {
+  grid-area: img-1;
+}
+main .grid-mates .img-2 {
+  grid-area: img-2;
+}
+main .grid-mates .img-3 {
+  grid-area: img-3;
+}
+main .grid-mates .txt-1 {
+  grid-area: txt-1;
+}
+main .grid-mates .txt-2 {
+  grid-area: txt-2;
+}
+main .grid-mates .txt-3 {
+  grid-area: txt-3;
+}
+main .grid-mates .img-4 {
+  grid-area: img-4;
+}
+main .grid-mates .img-5 {
+  grid-area: img-5;
+}
+main .grid-mates .img-6 {
+  grid-area: img-6;
+}
+main .grid-mates .txt-4 {
+  grid-area: txt-4;
+}
+main .grid-mates .txt-5 {
+  grid-area: txt-5;
+}
+main .grid-mates .txt-6 {
+  grid-area: txt-6;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-areas: "imagen1 imagen2 imagen3" "texto1 texto2 texto3" "imagen4 imagen5 imagen6" "texto4 texto5  texto6";
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 390px 50px 390px 100px;
+  margin-left: 10%;
+}
+.grid-productos img {
+  width: 190px;
+  height: 400px;
+  margin: 10px;
+  display: inline-block;
+}
+.grid-productos p {
+  margin: 4%;
+}
+.grid-productos .imagen1 {
+  grid-area: imagen1;
+}
+.grid-productos .imagen2 {
+  grid-area: imagen2;
+}
+.grid-productos .imagen3 {
+  grid-area: imagen3;
+}
+.grid-productos .texto1 {
+  grid-area: texto1;
+}
+.grid-productos .texto2 {
+  grid-area: texto2;
+}
+.grid-productos .texto3 {
+  grid-area: texto3;
+}
+.grid-productos .imagen4 {
+  grid-area: imagen4;
+}
+.grid-productos .imagen5 {
+  grid-area: imagen5;
+}
+.grid-productos .imagen6 {
+  grid-area: imagen6;
+}
+.grid-productos .texto4 {
+  grid-area: texto4;
+}
+.grid-productos .texto5 {
+  grid-area: texto5;
+}
+.grid-productos .texto6 {
+  grid-area: texto6;
+}
+
+main .envios {
+  margin-left: 5%;
+  margin-top: 2%;
+  font-weight: bold;
+  font-size: larger;
+}
+
+main .nosotros {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1%;
+  margin-bottom: 5%;
+  color: #1E201E;
+  font-size: 1.5rem;
+}
+main .tit-nos {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1%;
+  font-size: 3rem;
+  animation-name: efecto;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+@keyframes efecto {
+  0% {
+    color: green;
+  }
+  25% {
+    color: rgb(82, 23, 23);
+  }
+  50% {
+    color: darkolivegreen;
+  }
+  75% {
+    color: darkslategray;
+  }
+}
+main h2 {
+  margin-left: 2%;
+  text-decoration: underline rgb(94, 133, 75);
+}
+main .carousel-inner {
+  width: 900px;
+  height: fit-content;
+  margin-left: 15%;
+  background-size: contain;
+}
+main p {
+  font-size: 1.2rem;
+  margin-left: 2%;
+  font-weight: bolder;
+}
+
+@media (max-width: 480px) {
+  header img {
+    margin-inline-start: 30%;
+  }
+  header .logo {
+    display: none;
+  }
+  .navbar-brand {
+    color: white;
+    font-size: 1.8rem;
+    margin-right: 0px;
+    font-size: bold;
+  }
+  main iframe {
+    width: 100%;
+    margin-top: 8px;
+  }
+  main main img {
+    height: 280px;
+    margin-left: 0%;
+  }
+  main .contenedor-grid {
+    display: grid;
+    grid-template-areas: "titulo" "imagen1" "texto1" "imagen3" "texto3" "imagen5" "texto5";
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 200px 150px 200px 125px 200px 180px;
+  }
+  main .contenedor-grid .img2 {
+    display: none;
+  }
+  main .contenedor-grid .img3 {
+    grid-area: imagen3;
+  }
+  main .contenedor-grid .txt2 {
+    display: none;
+  }
+  main .contenedor-grid .img4 {
+    display: none;
+  }
+  main .contenedor-grid .img6 {
+    display: none;
+  }
+  main .contenedor-grid .txt4 {
+    display: none;
+  }
+  main .contenedor-grid .txt6 {
+    display: none;
+  }
+  main .contenedor-grid main section img {
+    margin-left: 10%;
+  }
+  footer {
+    background-color: #1E201E;
+    padding: 30px;
+  }
+  footer section p {
+    color: aliceblue;
+    font-size: large;
+    margin: 0px;
+  }
+  footer section .contacto {
+    display: none;
+  }
+  footer section .visit {
+    display: none;
+  }
+  footer section .mapa {
+    display: none;
+  }
+  footer section .redes {
+    display: none;
+  }
+  footer section .insta img {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  main .grid-mates {
+    display: grid;
+    grid-template-areas: "img-1 img-2" "txt-1 txt-2" "img-4 img-5" "txt-4 txt-5";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 180px 150px 180px 250px;
+  }
+  main .grid-mates .img-1 {
+    grid-area: img-1;
+    height: 180px;
+  }
+  main .grid-mates .img-2 {
+    grid-area: img-2;
+    height: 180px;
+  }
+  main .grid-mates .img-3 {
+    display: none;
+  }
+  main .grid-mates .txt-3 {
+    display: none;
+  }
+  main .grid-mates .img-4 {
+    grid-area: img-4;
+    height: 180px;
+  }
+  main .grid-mates .img-5 {
+    grid-area: img-5;
+    height: 180px;
+  }
+  main .grid-mates .img-6 {
+    display: none;
+  }
+  main .grid-mates .txt-6 {
+    display: none;
+  }
+  main .grid-mates main img {
+    margin-left: 0%;
+  }
+}
 body {
   font-family: "Cormorant Garamond", serif;
   background-color: #ECDFCC;
@@ -13,11 +290,13 @@ body {
 .container-fluid .logo {
   width: 120px;
   border-radius: 180px 180px 180px 180px;
+  align-content: center;
+  margin-right: 15%;
 }
 .container-fluid .navbar-brand {
   color: white;
   font-size: 2.5rem;
-  margin-right: 900px;
+  margin-right: 550px;
   font-size: bold;
 }
 .container-fluid .nav-link {
@@ -105,6 +384,39 @@ main .contenedor-grid .txt5 {
 }
 main .contenedor-grid .txt6 {
   grid-area: texto6;
+}
+
+footer {
+  background-color: #1E201E;
+  padding: 50px;
+}
+footer section p {
+  color: aliceblue;
+  font-size: x-large;
+  margin: 0px 4px 4px 8px;
+}
+footer .contacto {
+  width: 30px;
+  height: 25px;
+  text-align: left;
+}
+footer .visit {
+  text-align: center;
+  margin-block-start: -9%;
+}
+footer .mapa {
+  width: 15%;
+  height: 20%;
+  margin-left: 35%;
+}
+footer .redes {
+  text-align: end;
+  margin-block-start: -9%;
+}
+footer .insta img {
+  width: 40px;
+  margin-inline-start: 85%;
+  margin-block-end: 4%;
 }
 
 /*# sourceMappingURL=estilos.css.map */

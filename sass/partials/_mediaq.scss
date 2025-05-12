@@ -1,0 +1,91 @@
+@media (max-width:480px){
+    header{
+        img{margin-inline-start: 30%;}
+        .logo{
+        display: none;
+        }
+    }
+    .navbar-brand{
+        color: white;
+        font-size: 1.8rem;
+        margin-right: 0px;
+        font-size: bold;
+    }
+
+    main {
+        iframe{
+            width: 100%;
+            margin-top: 8px;
+        }
+        main img{
+            height: 280px ;
+            margin-left: 0%;
+        }
+        .contenedor-grid{
+            display: grid;
+            grid-template-areas: 
+            "titulo"
+            "imagen1"
+            "texto1"
+            "imagen3"
+            "texto3"
+            "imagen5"
+            "texto5";
+            grid-template-columns: 100%;
+            grid-template-rows: 50px 200px 150px 200px 125px 200px 180px;
+            .img2{
+            display: none;
+            }
+            .img3{
+                grid-area: imagen3;
+            }
+            .txt2{
+                display: none;
+            }
+            .img4{
+                display: none;
+            }
+            .img6{
+                display:none ;
+            }
+            .txt4{
+                display: none;
+            }
+            .txt6{
+                display: none;
+            }
+            main section img{
+                margin-left: 10%
+            }
+        
+        }
+
+    }
+
+    footer{
+        background-color: #1E201E;
+        padding: 30px;
+        section{
+            p{color: aliceblue;
+            font-size: large;
+            margin: 0px;}
+            .contacto{
+            display: none;}
+            .visit{
+            display: none;
+            }
+            .mapa{
+            display: none;
+            }
+            .redes{
+            display: none;
+            }
+            .insta img{
+            display: none;
+            }
+        }
+
+
+    
+    }
+}

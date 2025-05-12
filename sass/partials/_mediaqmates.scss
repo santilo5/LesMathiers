@@ -1,0 +1,49 @@
+@media (max-width:480px){
+    main{
+        .grid-mates{
+            display: grid;
+            grid-template-areas: 
+            "img-1 img-2"
+            "txt-1 txt-2"
+            "img-4 img-5"
+            "txt-4 txt-5"
+            ;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 180px 150px 180px 250px;
+            .img-1{
+            grid-area: img-1;
+            height: 180px;
+            }
+            .img-2{
+            grid-area: img-2;
+            height: 180px;
+            }
+            .img-3{
+            display: none;
+            }
+            .txt-3{
+            display: none;
+            }
+            .img-4{
+            grid-area: img-4;
+            height: 180px;
+            }
+            .img-5{
+             grid-area: img-5;
+            height: 180px;
+            }
+            .img-6{
+            display: none;
+            }
+            .txt-6{
+            display: none;
+            }
+            main img{
+            margin-left: 0%;
+            }
+
+
+
+        }
+    }
+}
