@@ -20,18 +20,22 @@ main{
     @keyframes efecto {
         0%{
         color: green;
-    
+        transform: scale(0.7,1.2);
         }
         25%{
         color: rgb(82, 23, 23);
+        transform: scale(1,1.2);
         }
         50%{
         color: darkolivegreen;
+        transform: scale(0.7,1.2);
         }
         75%{
         color: darkslategray;
+        transform: scale(1,1.2);
         }
         100%{
+            transform: scale(0.7,1.2);
 
         }
     }

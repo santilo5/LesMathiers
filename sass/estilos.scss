@@ -1,4 +1,6 @@
 
+@use "./partials/variables";
+
 @use "./partials/mates";
 @use "./partials/productos";
 @use "./partials/envios";
@@ -6,6 +8,7 @@
 // partials mediaq
 @use "./partials/mediaq";
 @use "./partials/mediaqmates";
+
 
 
 
@@ -30,9 +33,10 @@ body{
         color: white;
         font-size: 2.5rem;
         margin-right: 550px;
-        font-size: bold;
+        font-weight: bold;
     }
     .nav-link{
+        /* color: $blanco; (intente usar las variables, pero no las toma)*/
         color: antiquewhite;
     }
     .dropdown-menu{

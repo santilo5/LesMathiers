@@ -1,6 +1,7 @@
 
 main{
     .grid-mates{
+        
         display: grid;
         grid-template-areas: 
         "img-1 img-2 img-3"
@@ -11,6 +12,7 @@ main{
         grid-template-columns: 30% 30% 30%;
         grid-template-rows: 280px 150px 280px 150px;
         img{
+            border-radius: 10px 10px 10px 10px;
             margin: 10%;
             width: 200px;
             height: 350px;
