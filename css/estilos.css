@@ -15,7 +15,7 @@ main .grid-mates p {
   font-weight: bold;
 }
 main .grid-mates img {
-  width: 280px;
+  width: 300px;
 }
 main .grid-mates .img-1 {
   grid-area: img-1;
@@ -129,36 +129,35 @@ main .tit-nos {
   margin-top: 1%;
   font-size: 3rem;
   animation-name: efecto;
-  animation-iteration-count: infinite;
-  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-duration: 4s;
 }
 @keyframes efecto {
   0% {
-    color: green;
-    transform: scale(0.7, 1.2);
-  }
-  25% {
-    color: rgb(82, 23, 23);
-    transform: scale(1, 1.2);
+    color: rgb(10, 104, 10);
+    transform: translateX(-500px);
   }
   50% {
-    color: darkolivegreen;
-    transform: scale(0.7, 1.2);
-  }
-  75% {
-    color: darkslategray;
-    transform: scale(1, 1.2);
+    color: #CA7842;
   }
   100% {
-    transform: scale(0.7, 1.2);
+    color: #758066;
   }
 }
-main h2 {
+main .subtitulo {
   margin-left: 2%;
-  text-decoration: underline rgb(94, 133, 75);
+  text-decoration: underline rgb(121, 150, 106);
+  animation: desliz;
+  animation-timing-function: 1;
+  animation-duration: 2s;
+}
+@keyframes desliz {
+  0% {
+    transform: translateX(180px);
+  }
 }
 main .carousel-inner {
-  width: 900px;
+  width: 800px;
   height: fit-content;
   margin-left: 15%;
   background-size: contain;
@@ -307,6 +306,7 @@ body {
   font-size: 2.5rem;
   margin-right: 550px;
   font-weight: bold;
+  text-shadow: -2px 3px 2px rgba(0, 0, 0, 0.7);
 }
 .container-fluid .nav-link {
   /* color: $blanco; (intente usar las variables, pero no las toma)*/
