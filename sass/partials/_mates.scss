@@ -1,5 +1,9 @@
 
 main{
+    .tit-mates{
+        margin: 1%;
+        text-decoration: underline #758066;
+    }
     .grid-mates{
         
         display: grid;
@@ -18,9 +22,9 @@ main{
             height: 350px;
         }
         p{
-            margin: 23%;
+            margin-top: 22%;
+            margin-left: 11% ;
             font-weight: bold;
-
         }
     
         img{

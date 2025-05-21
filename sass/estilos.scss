@@ -77,20 +77,24 @@ main{
             font-weight: bold;
             margin-top: 20%;
             font-size: 1.5rem;
-            margin-left: 20%;
+            margin-left: 6%;
         
+        }
+        p:hover{
+            color: #758066;
         }
         img{
             height: 380px ;
             margin-top: 2%;
-            margin-left: 3%;    
+            margin-left: 2,5%;    
             border-radius: 10px 10px 10px 10px
         }
         h1{
             text-align: center;
             margin-top: 1%;
-            text-decoration: underline lightgrey;
+            text-decoration: underline lightgrey;         
         }
+        
         // Grid index
         .titulo{
             grid-area: titulo;
@@ -130,10 +134,7 @@ main{
         }
         .txt6{
             grid-area: texto6;
-        }
-    
-
-    
+        }   
     }
 }
 
