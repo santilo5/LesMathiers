@@ -1,13 +1,33 @@
 
 main{
+    h1{
+        text-align: center;
+        margin-top: 5px;
+    }
     .envios{
     margin-left: 5%;
     margin-top: 2%;
     font-weight: bold;
     font-size: larger;
     }
-}
-label{
+    label{
     margin-left:1%;
-    margin-bottom: 15%;
+    font-weight: bold;
+    
+    }
+    .visit{
+    display:flex;
+    position: relative;
+    left:500px;
+    bottom: 35px;
+    }
+    .mapa{
+    display: flex;
+    position: relative;
+    bottom: 40px;
+    left: 500px;
+    height: relative;
+    width: relative;
+    }
 }
+
