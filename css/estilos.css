@@ -348,36 +348,33 @@ body {
   background-color: #ECDFCC;
   font-size: 62, 5%;
 }
-body header {
+body header .container-fluid {
   background-color: #758066;
 }
-body .container-fluid {
-  background-color: #758066;
-}
-body .container-fluid .btn.btn-outline-success {
+body header .container-fluid .btn.btn-outline-success {
   color: antiquewhite;
 }
-body .container-fluid .logo {
+body header .container-fluid .logo {
   width: 120px;
   border-radius: 180px 180px 180px 180px;
   align-content: center;
   margin-right: 15%;
 }
-body .container-fluid .navbar-brand {
+body header .container-fluid .navbar-brand {
   color: white;
   font-size: 2.5rem;
   margin-right: 700px;
   font-weight: bold;
   text-shadow: -2px 3px 2px rgba(0, 0, 0, 0.7);
 }
-body .container-fluid .nav-link {
+body header .container-fluid .nav-link {
   /* color: $blanco; (intente usar las variables, pero no las toma)*/
   color: antiquewhite;
 }
-body .container-fluid .dropdown-menu {
+body header .container-fluid .dropdown-menu {
   background-color: antiquewhite;
 }
-body .container-fluid li {
+body header .container-fluid li {
   font-size: 1.5rem;
   font-weight: bold;
 }
