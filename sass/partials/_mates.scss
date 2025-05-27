@@ -13,22 +13,24 @@ main{
         "txt-1 txt-2 txt-3"
         "img-4 img-5 img-6"
         "txt-4 txt-5 txt-6"
+        "img-7 img-8 img-9"
+        "txt-7 txt-8 txt-9"
         ;
         grid-template-columns: 32% 32% 32%;
-        grid-template-rows: 280px 150px 280px 150px;
+        grid-template-rows: 280px 150px 280px 150px 280px 150px;
         img{
             border-radius: 10px 10px 10px 10px;
             margin: 10%;
             width: 200px;
             height: 350px;
-            margin-left: 25% ;
+            margin-left: 30% ;
         }
         img:hover{
             transform: scale(1.1,1.1);
         }
         p{
-            margin-top: 22%;
-            margin-left: 26% ;
+            margin-top: 24%;
+            margin-left: 31% ;
             font-weight: bold;
             font-size: 22px;
         }
@@ -75,6 +77,24 @@ main{
         }
         .txt-6{
             grid-area: txt-6;
+        }
+        .img-7{
+            grid-area: img-7;
+        }
+        .img-8{
+            grid-area: img-8;
+        }
+        .img-9{
+            grid-area: img-9;
+        }
+        .txt-7{
+            grid-area: txt-7;
+        }
+        .txt-8{
+            grid-area: txt-8;
+        }
+        .txt-9{
+            grid-area: txt-9;
         }
     }
 }

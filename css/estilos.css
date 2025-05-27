@@ -5,23 +5,23 @@ main .tit-mates {
 }
 main .grid-mates {
   display: grid;
-  grid-template-areas: "img-1 img-2 img-3" "txt-1 txt-2 txt-3" "img-4 img-5 img-6" "txt-4 txt-5 txt-6";
+  grid-template-areas: "img-1 img-2 img-3" "txt-1 txt-2 txt-3" "img-4 img-5 img-6" "txt-4 txt-5 txt-6" "img-7 img-8 img-9" "txt-7 txt-8 txt-9";
   grid-template-columns: 32% 32% 32%;
-  grid-template-rows: 280px 150px 280px 150px;
+  grid-template-rows: 280px 150px 280px 150px 280px 150px;
 }
 main .grid-mates img {
   border-radius: 10px 10px 10px 10px;
   margin: 10%;
   width: 200px;
   height: 350px;
-  margin-left: 25%;
+  margin-left: 30%;
 }
 main .grid-mates img:hover {
   transform: scale(1.1, 1.1);
 }
 main .grid-mates p {
-  margin-top: 22%;
-  margin-left: 26%;
+  margin-top: 24%;
+  margin-left: 31%;
   font-weight: bold;
   font-size: 22px;
 }
@@ -68,6 +68,24 @@ main .grid-mates .txt-5 {
 main .grid-mates .txt-6 {
   grid-area: txt-6;
 }
+main .grid-mates .img-7 {
+  grid-area: img-7;
+}
+main .grid-mates .img-8 {
+  grid-area: img-8;
+}
+main .grid-mates .img-9 {
+  grid-area: img-9;
+}
+main .grid-mates .txt-7 {
+  grid-area: txt-7;
+}
+main .grid-mates .txt-8 {
+  grid-area: txt-8;
+}
+main .grid-mates .txt-9 {
+  grid-area: txt-9;
+}
 
 .tit-produ {
   margin: 1%;
@@ -78,7 +96,7 @@ main .grid-mates .txt-6 {
 .grid-productos {
   display: grid;
   grid-template-areas: "imagen1 imagen2 imagen3" "texto1 texto2 texto3" "imagen4 imagen5 imagen6" "texto4 texto5  texto6";
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 32% 32% 32%;
   grid-template-rows: 400px 100px 400px 100px;
   margin-left: 10%;
 }
@@ -86,13 +104,14 @@ main .grid-mates .txt-6 {
   height: 420px;
   margin: 22px;
   border-radius: 10px 10px 10px 10px;
+  margin-left: 13%;
 }
 .grid-productos img:hover {
   transform: scale(1.1, 1.1);
 }
 .grid-productos p {
-  margin-top: 10%;
-  margin-left: 5%;
+  margin-top: 12%;
+  margin-left: 14%;
   font-size: 22px;
 }
 .grid-productos p:hover {
@@ -423,12 +442,13 @@ body main .contenedor-grid {
 body main .contenedor-grid p {
   color: #1E201E;
   font-weight: bold;
-  margin-top: 20%;
+  margin-top: 22%;
   font-size: 1.5rem;
   margin-left: 6%;
 }
 body main .contenedor-grid p:hover {
   color: #758066;
+  text-decoration: underline;
 }
 body main .contenedor-grid img {
   height: 420px;

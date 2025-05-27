@@ -9,14 +9,14 @@
         height: 420px;
         margin: 22px;
         border-radius: 10px 10px 10px 10px;
-        
+        margin-left: 13%;
     }
     img:hover{
         transform: scale(1.1,1.1);
     }
     p{
-        margin-top: 10%;
-        margin-left: 5%;
+        margin-top: 12%;
+        margin-left: 14%;
         font-size: 22px;
     }
     p:hover{
@@ -30,7 +30,7 @@
     "imagen4 imagen5 imagen6"
     "texto4 texto5  texto6"
     ;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 32% 32% 32%;
     grid-template-rows: 400px 100px 400px 100px;
     margin-left: 10%;
     
