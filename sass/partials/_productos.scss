@@ -1,7 +1,8 @@
 
 .tit-produ{
     margin: 1%;
-    text-decoration: underline #758066;
+    text-align: center;
+    text-decoration: underline azure;
 }
 .grid-productos{
     img{      
@@ -10,9 +11,17 @@
         border-radius: 10px 10px 10px 10px;
         
     }
+    img:hover{
+        transform: scale(1.1,1.1);
+    }
     p{
-        margin-top: 9%;
+        margin-top: 10%;
         margin-left: 5%;
+        font-size: 22px;
+    }
+    p:hover{
+        text-decoration: underline;
+        color: azure;
     }
     display: grid;
     grid-template-areas: 

@@ -1,8 +1,9 @@
 
 main{
     .tit-mates{
-        margin: 1%;
-        text-decoration: underline #758066;
+        margin: 0,5%;
+        text-decoration: underline azure;
+        margin-top: 2%;
     }
     .grid-mates{
         
@@ -13,18 +14,27 @@ main{
         "img-4 img-5 img-6"
         "txt-4 txt-5 txt-6"
         ;
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 32% 32% 32%;
         grid-template-rows: 280px 150px 280px 150px;
         img{
             border-radius: 10px 10px 10px 10px;
             margin: 10%;
             width: 200px;
             height: 350px;
+            margin-left: 25% ;
+        }
+        img:hover{
+            transform: scale(1.1,1.1);
         }
         p{
             margin-top: 22%;
-            margin-left: 11% ;
+            margin-left: 26% ;
             font-weight: bold;
+            font-size: 22px;
+        }
+        p:hover{
+            text-decoration: underline;
+            color: azure;
         }
     
         img{

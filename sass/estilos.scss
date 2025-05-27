@@ -94,10 +94,13 @@ header{
                 margin-left: 2,5%;    
                 border-radius: 10px 10px 10px 10px
             }
+            img:hover{
+                transform: scale(1.1,1.1);
+            }
             h1{
                 text-align: center;
                 margin-top: 1%;
-                text-decoration: underline lightgrey;         
+                text-decoration: underline azure;         
             }
             
             // Grid index
@@ -197,6 +200,7 @@ header{
         -webkit-border-radius: 68px 68px 68px 68px;
         -moz-border-radius: 68px 68px 68px 68px;
                 }
+                
                 
                 
                 } 

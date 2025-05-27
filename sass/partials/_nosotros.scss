@@ -6,7 +6,6 @@ main{
     margin-bottom: 5%;
     color: #1E201E;
     font-size: 1.5rem;
-    
     }
     .tit-nos{
         text-align: center;
@@ -20,7 +19,7 @@ main{
     @keyframes efecto {
         0%{
         color: rgb(10, 104, 10);
-        transform: translateX(-500px);
+        transform: translateX(-400px);
         }
         50%{
             color: #CA7842;
@@ -45,15 +44,21 @@ main{
         }
     }    
     .carousel-inner{
+        display: flex;
+        position: relative;
+        left: 650px;
         width:  800px;
         height: fit-content;
-        margin-left: 15%;
+        
         background-size: contain;
         
     }
+    .promo{
+        font-size: 22px;
+    }
     p{
-        font-size:1.2rem;
-        margin-left: 2%;
+        font-size:25px;
+        margin-left: 1%;
         font-weight: bolder;
     }
 }

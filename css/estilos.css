@@ -1,11 +1,12 @@
 main .tit-mates {
-  margin: 1%;
-  text-decoration: underline #758066;
+  margin: 0, 5%;
+  text-decoration: underline azure;
+  margin-top: 2%;
 }
 main .grid-mates {
   display: grid;
   grid-template-areas: "img-1 img-2 img-3" "txt-1 txt-2 txt-3" "img-4 img-5 img-6" "txt-4 txt-5 txt-6";
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 32% 32% 32%;
   grid-template-rows: 280px 150px 280px 150px;
 }
 main .grid-mates img {
@@ -13,11 +14,20 @@ main .grid-mates img {
   margin: 10%;
   width: 200px;
   height: 350px;
+  margin-left: 25%;
+}
+main .grid-mates img:hover {
+  transform: scale(1.1, 1.1);
 }
 main .grid-mates p {
   margin-top: 22%;
-  margin-left: 11%;
+  margin-left: 26%;
   font-weight: bold;
+  font-size: 22px;
+}
+main .grid-mates p:hover {
+  text-decoration: underline;
+  color: azure;
 }
 main .grid-mates img {
   width: 300px;
@@ -61,7 +71,8 @@ main .grid-mates .txt-6 {
 
 .tit-produ {
   margin: 1%;
-  text-decoration: underline #758066;
+  text-align: center;
+  text-decoration: underline azure;
 }
 
 .grid-productos {
@@ -76,9 +87,17 @@ main .grid-mates .txt-6 {
   margin: 22px;
   border-radius: 10px 10px 10px 10px;
 }
+.grid-productos img:hover {
+  transform: scale(1.1, 1.1);
+}
 .grid-productos p {
-  margin-top: 9%;
+  margin-top: 10%;
   margin-left: 5%;
+  font-size: 22px;
+}
+.grid-productos p:hover {
+  text-decoration: underline;
+  color: azure;
 }
 .grid-productos .imagen1 {
   grid-area: imagen1;
@@ -135,7 +154,7 @@ main .visit {
   text-align: center;
   top: 20px;
   font-size: 30px;
-  text-decoration: underline #758066;
+  text-decoration: underline azure;
 }
 main .mapa {
   display: block;
@@ -198,7 +217,7 @@ main .tit-nos {
 @keyframes efecto {
   0% {
     color: rgb(10, 104, 10);
-    transform: translateX(-500px);
+    transform: translateX(-400px);
   }
   50% {
     color: #CA7842;
@@ -220,14 +239,19 @@ main .subtitulo {
   }
 }
 main .carousel-inner {
+  display: flex;
+  position: relative;
+  left: 650px;
   width: 800px;
   height: fit-content;
-  margin-left: 15%;
   background-size: contain;
 }
+main .promo {
+  font-size: 22px;
+}
 main p {
-  font-size: 1.2rem;
-  margin-left: 2%;
+  font-size: 25px;
+  margin-left: 1%;
   font-weight: bolder;
 }
 
@@ -412,10 +436,13 @@ body main .contenedor-grid img {
   margin-left: 2, 5%;
   border-radius: 10px 10px 10px 10px;
 }
+body main .contenedor-grid img:hover {
+  transform: scale(1.1, 1.1);
+}
 body main .contenedor-grid h1 {
   text-align: center;
   margin-top: 1%;
-  text-decoration: underline lightgrey;
+  text-decoration: underline azure;
 }
 body main .contenedor-grid .titulo {
   grid-area: titulo;
