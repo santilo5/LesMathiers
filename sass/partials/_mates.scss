@@ -17,19 +17,19 @@ main{
         "txt-7 txt-8 txt-9"
         ;
         grid-template-columns: 32% 32% 32%;
-        grid-template-rows: 280px 150px 280px 150px 280px 150px;
+        grid-template-rows: 280px 200px 280px 200px 280px 150px;
         img{
             border-radius: 10px 10px 10px 10px;
             margin: 10%;
-            width: 200px;
-            height: 350px;
+            width: 250px;
+            height: 400px;
             margin-left: 30% ;
         }
         img:hover{
             transform: scale(1.1,1.1);
         }
         p{
-            margin-top: 24%;
+            margin-top: 30%;
             margin-left: 31% ;
             font-weight: bold;
             font-size: 22px;
