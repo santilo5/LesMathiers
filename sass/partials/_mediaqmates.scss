@@ -1,22 +1,39 @@
 @media (max-width:480px){
     main{
+        .tit-mates{
+            text-align: center;
+        }
         .grid-mates{
             display: grid;
             grid-template-areas: 
-            "img-1 img-2"
-            "txt-1 txt-2"
-            "img-4 img-5"
-            "txt-4 txt-5"
+            "img-1"
+            "txt-1"
+            "img-2" 
+            "txt-2"
+            "img-4" 
+            "txt-4" 
+            "img-5"
+            "txt-5"
+            "img-7"
+            "txt-7"
             ;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 180px 150px 180px 250px;
+            grid-template-columns: 100%;
+            grid-template-rows: 180px 150px 180px 150px 200px 200px;
             .img-1{
             grid-area: img-1;
-            height: 180px;
+            height: 200px;
+            }
+            .txt-1{
+                grid-area: txt-1;
+                margin-top: 15%;
             }
             .img-2{
             grid-area: img-2;
-            height: 180px;
+            height: 200px;
+            }
+            .txt-2{
+                grid-area: txt-2;
+                margin-top: 15%;
             }
             .img-3{
             display: none;
@@ -26,11 +43,27 @@
             }
             .img-4{
             grid-area: img-4;
-            height: 180px;
+            height: 200px;
+            }
+            .txt-4{
+                grid-area: txt-4;
+                margin-top: 10%;
             }
             .img-5{
              grid-area: img-5;
-            height: 180px;
+            height: 200px;
+            }
+            .txt-5{
+                grid-area: txt-5;
+                margin-top: 2%;
+            }
+            .img-7{
+                grid-area: img-7;
+                height: 200px;
+            }
+            .txt-7{
+                grid-area: txt-7;
+                margin-top: 2%;
             }
             .img-6{
             display: none;
@@ -38,12 +71,32 @@
             .txt-6{
             display: none;
             }
-            main img{
-            margin-left: 0%;
+            .img-8{
+                display: none;
+            }
+            .txt-8{
+                display: none;
+            }
+            .img-9{
+                display: none;
+            }
+            .txt-9{
+                display: none;
+            }
+            img{
+            position:relative ;
+            margin-top: 2%;
+            }
+            p{
+            text-align: center;
             }
 
 
 
         }
     }
+}
+
+@media (min-width:481px) and (max-width:769){
+
 }

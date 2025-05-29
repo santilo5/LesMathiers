@@ -275,29 +275,50 @@ main p {
 }
 
 @media (max-width: 480px) {
-  header img {
-    margin-inline-start: 30%;
-  }
   header .logo {
     display: none;
   }
   .navbar-brand {
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     margin-right: 0px;
     font-size: bold;
+    display: flex;
+    position: relative;
+    top: 20px;
   }
-  main iframe {
+  .container-fluid {
     width: 100%;
+  }
+  .container-fluid .navbar-toggler {
+    display: flex;
+    position: relative;
+    left: 80%;
+    bottom: 33px;
+  }
+  main div {
+    width: 100%;
+  }
+  main div .iframe {
+    width: 412px;
     margin-top: 8px;
+    margin-left: 0px;
+  }
+  main h1 {
+    text-align: center;
+    padding: 5px;
   }
   main main img {
+    width: 240px;
     height: 280px;
     margin-left: 0%;
   }
+  main img:hover {
+    transform: none;
+  }
   main .contenedor-grid {
     display: grid;
-    grid-template-areas: "titulo" "imagen1" "texto1" "imagen3" "texto3" "imagen5" "texto5";
+    grid-template-areas: "." "imagen1" "texto1" "imagen3" "texto3" "imagen5" "texto5";
     grid-template-columns: 100%;
     grid-template-rows: 50px 200px 150px 200px 125px 200px 180px;
   }
@@ -322,9 +343,6 @@ main p {
   main .contenedor-grid .txt6 {
     display: none;
   }
-  main .contenedor-grid main section img {
-    margin-left: 10%;
-  }
   footer {
     background-color: #1E201E;
     padding: 30px;
@@ -348,19 +366,30 @@ main p {
   }
 }
 @media (max-width: 480px) {
+  main .tit-mates {
+    text-align: center;
+  }
   main .grid-mates {
     display: grid;
-    grid-template-areas: "img-1 img-2" "txt-1 txt-2" "img-4 img-5" "txt-4 txt-5";
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 180px 150px 180px 250px;
+    grid-template-areas: "img-1" "txt-1" "img-2" "txt-2" "img-4" "txt-4" "img-5" "txt-5" "img-7" "txt-7";
+    grid-template-columns: 100%;
+    grid-template-rows: 180px 150px 180px 150px 200px 200px;
   }
   main .grid-mates .img-1 {
     grid-area: img-1;
-    height: 180px;
+    height: 200px;
+  }
+  main .grid-mates .txt-1 {
+    grid-area: txt-1;
+    margin-top: 15%;
   }
   main .grid-mates .img-2 {
     grid-area: img-2;
-    height: 180px;
+    height: 200px;
+  }
+  main .grid-mates .txt-2 {
+    grid-area: txt-2;
+    margin-top: 15%;
   }
   main .grid-mates .img-3 {
     display: none;
@@ -370,11 +399,27 @@ main p {
   }
   main .grid-mates .img-4 {
     grid-area: img-4;
-    height: 180px;
+    height: 200px;
+  }
+  main .grid-mates .txt-4 {
+    grid-area: txt-4;
+    margin-top: 10%;
   }
   main .grid-mates .img-5 {
     grid-area: img-5;
-    height: 180px;
+    height: 200px;
+  }
+  main .grid-mates .txt-5 {
+    grid-area: txt-5;
+    margin-top: 2%;
+  }
+  main .grid-mates .img-7 {
+    grid-area: img-7;
+    height: 200px;
+  }
+  main .grid-mates .txt-7 {
+    grid-area: txt-7;
+    margin-top: 2%;
   }
   main .grid-mates .img-6 {
     display: none;
@@ -382,10 +427,31 @@ main p {
   main .grid-mates .txt-6 {
     display: none;
   }
-  main .grid-mates main img {
-    margin-left: 0%;
+  main .grid-mates .img-8 {
+    display: none;
+  }
+  main .grid-mates .txt-8 {
+    display: none;
+  }
+  main .grid-mates .img-9 {
+    display: none;
+  }
+  main .grid-mates .txt-9 {
+    display: none;
+  }
+  main .grid-mates img {
+    position: relative;
+    margin-top: 2%;
+  }
+  main .grid-mates p {
+    text-align: center;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Cormorant Garamond", serif;
   background-color: #ECDFCC;
@@ -433,6 +499,11 @@ main div iframe {
   margin-top: 8px;
   margin-left: 25%;
 }
+main h1 {
+  text-align: center;
+  margin-top: 1%;
+  text-decoration: underline azure;
+}
 main .contenedor-grid {
   display: grid;
   grid-template-areas: "titulo titulo titulo" "imagen1 imagen2 imagen3" "texto1 texto2 texto3" "imagen4 imagen5 imagen6" "texto4 texto5 texto6";
@@ -459,11 +530,6 @@ main .contenedor-grid img {
 }
 main .contenedor-grid img:hover {
   transform: scale(1.1, 1.1);
-}
-main .contenedor-grid h1 {
-  text-align: center;
-  margin-top: 1%;
-  text-decoration: underline azure;
 }
 main .contenedor-grid .titulo {
   grid-area: titulo;

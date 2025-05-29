@@ -9,7 +9,10 @@
 @use "./partials/mediaq";
 @use "./partials/mediaqmates";
 
-
+*{
+    margin: 0;
+    padding: 0;
+}
 
 
 body{
@@ -62,6 +65,11 @@ body{
                 margin-left: 25%;
             }
         }
+        h1{
+            text-align: center;
+            margin-top: 1%;
+            text-decoration: underline azure;         
+        }
         .contenedor-grid{
             display: grid;
             grid-template-areas: 
@@ -95,11 +103,7 @@ body{
             img:hover{
                 transform: scale(1.1,1.1);
             }
-            h1{
-                text-align: center;
-                margin-top: 1%;
-                text-decoration: underline azure;         
-            }
+            
             
             // Grid index
             .titulo{
@@ -167,7 +171,7 @@ footer{
             
         
             .contacto{
-                margin-right: 8px;
+            margin-right: 8px;
             width: 40px;
             height: 40px;
             border-radius: 68px 68px 68px 68px;

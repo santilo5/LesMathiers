@@ -1,30 +1,57 @@
+
+
 @media (max-width:480px){
     header{
-        img{margin-inline-start: 30%;}
         .logo{
         display: none;
         }
     }
     .navbar-brand{
         color: white;
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         margin-right: 0px;
         font-size: bold;
+        display: flex;
+        position: relative;
+        top: 20px;
+        
+    }
+    .container-fluid{
+        width: 100%;
+            .navbar-toggler{
+                display: flex;
+                position: relative;
+                left: 80%;
+                bottom: 33px;
+            }
+        
     }
 
     main {
-        iframe{
+        div{
             width: 100%;
+            .iframe{
+            width: 412px;
             margin-top: 8px;
+            margin-left: 0px;
+            }
+        }
+        h1{
+            text-align: center;
+            padding: 5px;        
         }
         main img{
+            width: 240px;
             height: 280px ;
             margin-left: 0%;
         }
+        img:hover{
+                transform: none;
+            }
         .contenedor-grid{
             display: grid;
             grid-template-areas: 
-            "titulo"
+            "."
             "imagen1"
             "texto1"
             "imagen3"
@@ -54,9 +81,7 @@
             .txt6{
                 display: none;
             }
-            main section img{
-                margin-left: 10%
-            }
+            
         
         }
 
