@@ -1,114 +1,813 @@
-
-
-@media (max-width:480px){
-    header{
-        .logo{
-        display: none;
-        }
-    }
-    .navbar-brand{
-        color: white;
-        font-size: 1.7rem;
-        margin-right: 0px;
-        font-size: bold;
+@media (max-width: 480px) {
+  
+  body {
+    header {
+      .navbar-toggler {
         display: flex;
+        margin-left: auto;
         position: relative;
-        top: 20px;
-        
-    }
-    .container-fluid{
-        width: 100%;
-            .navbar-toggler{
-                display: flex;
-                position: relative;
-                left: 80%;
-                bottom: 33px;
-            }
-        
+        bottom: 48px;
+      }
+
+      .logo {
+        display: none;
+      }
+
+      .navbar-brand {
+        color: white;
+        font-size: 1.8rem;
+        margin-right: 0;
+        font-weight: bold;
+        text-shadow: -2px 3px 2px rgba(0, 0, 0, 0.7);
+        padding-top: 40px;
+      }
+
+      .nav-link {
+        color: antiquewhite;
+        font-size: 1.2rem;
+      }
+
+      li {
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
     }
 
     main {
-        div{
-            width: 100%;
-            .iframe{
-            width: 412px;
-            margin-top: 8px;
-            margin-left: 0px;
-            }
+      margin-bottom: 15%;
+
+      div {
+        .videomates {
+          margin-top: 30px;
+          margin-left: 5%;
+          width: 90%;
         }
-        h1{
-            text-align: center;
-            padding: 5px;        
-        }
-        main img{
-            width: 240px;
-            height: 280px ;
-            margin-left: 0%;
-        }
-        img:hover{
-                transform: none;
-            }
-        .contenedor-grid{
-            display: grid;
-            grid-template-areas: 
-            "."
-            "imagen1"
-            "texto1"
-            "imagen3"
-            "texto3"
-            "imagen5"
-            "texto5";
-            grid-template-columns: 100%;
-            grid-template-rows: 50px 200px 150px 200px 125px 200px 180px;
-            .img2{
-            display: none;
-            }
-            .img3{
-                grid-area: imagen3;
-            }
-            .txt2{
-                display: none;
-            }
-            .img4{
-                display: none;
-            }
-            .img6{
-                display:none ;
-            }
-            .txt4{
-                display: none;
-            }
-            .txt6{
-                display: none;
-            }
-            
-        
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 2rem;
+        text-decoration: underline azure;
+      }
+
+      .contenedor-grid.index {
+        display: block;
+
+        p {
+          color: #1E201E;
+          font-weight: bold;
+          margin-top: 5%;
+          font-size: 1.2rem;
+          margin-left: 0;
+          text-align: center;
         }
 
+        img {
+          height: auto;
+          width: 90%;
+          max-width: 300px;
+          margin: 5% auto;
+          display: block;
+          border-radius: 10px;
+        }
+
+        img:hover {
+          transform: none;
+        }
+      }
     }
 
-    footer{
-        background-color: #1E201E;
-        padding: 30px;
-        section{
-            p{color: aliceblue;
-            font-size: large;
-            margin: 0px;}
-            .contacto{
-            display: none;}
-            .visit{
-            display: none;
-            }
+    footer {
+      h2 {
+        text-align: center;
+        margin-left: 0px;
+      }
 
-            .redes{
-            display: none;
-            }
-            .insta img{
-            display: none;
-            }
+      .pie {
+        font-size: x-large;
+        margin: 0px;
+
+        p {
+          display: none;
         }
 
+        .contacto {
+          margin-right: 8px;
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  .tit-mates {
+    margin: 0.5%;
+    margin-top: 2%;
+    text-align: center;
+    font-size: 1.8rem;
+    text-decoration: underline azure;
+  }
+
+  .grid-mates {
+    display: block;
+
+    img {
+      border-radius: 10px;
+      width: 90%;
+      max-width: 300px;
+      height: auto;
+      margin: 5% auto;
+      display: block;
+    }
+
+    p {
+      margin: 5% auto;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-align: center;
+      width: 90%;
+    }
+  }
+
+  .nosotros {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    color: #1E201E;
+    font-size: 1.2rem;
+  }
+
+  .tit-nos {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5%;
+    font-size: 2rem;
+    animation: efecto 2s 1;
+  }
+
+  @keyframes efecto {
+    0% {
+      color: rgb(10, 104, 10);
+      transform: translateX(-100px);
+    }
+    50% {
+      color: #CA7842;
+    }
+    100% {
+      color: #758066;
+    }
+  }
+
+  .subtitulo {
+    margin-left: 0;
+    text-align: center;
+    text-decoration: underline rgb(121, 150, 106);
+    animation: desliz 1s ease;
+    font-size: 1.5rem;
+  }
+
+  @keyframes desliz {
+    0% {
+      transform: translateX(80px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .carousel-inner {
+    display: flex;
+    position: relative;
+    left: 0;
+    width: 95%;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-size: contain;
+  }
+
+  .promo,
+  p {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0 5%;
+    margin-left: 0;
+  }
+
+  .tit-produ {
+    margin: 3%;
+    text-align: center;
+    font-size: 1.8rem;
+    text-decoration: underline azure;
+  }
+
+  .grid-productos {
+    display: block;
+    margin-left: 0;
+
+    img {
+      height: auto;
+      width: 90%;
+      max-width: 300px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    p {
+      margin: 10px auto 30px;
+      font-size: 1.2rem;
+      text-align: center;
+      width: 90%;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-decoration: underline #94675f;
+  }
+
+  .codpost {
+    margin: 3% auto;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 90%;
+  }
+
+  .visit {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-decoration: underline azure;
+  }
+
+  .mapa {
+    display: block;
+    width: 90%;
+    max-width: 100%;
+    height: 250px;
+    margin: 20px auto;
+    box-shadow: 0px 5px 5px -2px rgba(117, 128, 102, 0.75);
+    border-radius: 10px;
+  }
+
+  .exterior {
+    text-align: center;
+    margin-top: 5%;
+    text-decoration: underline #758066;
+    font-size: 1.8rem;
+  }
+
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 15px;
+    width: 90%;
+    margin: 0 auto;
 
     
+  
+    .area-text {
+      text-align: center;
+      font-size: 1rem;
+      width: 100%;
+      margin: 10px 0;
     }
+
+ 
+    textarea {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+// TABLET
+@media (min-width: 481px) and (max-width: 768px) {
+    /* HEADER */
+    header {
+        .navbar-toggler {
+            bottom: 38px;
+        }
+        
+        .logo {
+            display: none;
+        }
+        
+        .navbar-brand {
+            font-size: 2.2rem;
+            padding-top: 30px;
+        }
+        
+        .nav-link {
+            font-size: 1.4rem;
+        }
+    }
+    
+    /* INDEX */
+    main {
+        margin-bottom: 10%;
+        
+        .videomates {
+            margin-left: 15%;
+            width: 70%;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+        }
+        div {
+            
+        
+            .contenedor-grid.index {
+        /* 1. Cambiamos a 2 columnas */
+        grid-template-columns: 48% 48%;
+        /* 2. Filas automáticas basadas en contenido */
+        grid-template-rows: repeat(6, 500px);
+        /* 3. Redefinimos completamente las áreas */
+         
+            grid-template-areas: 
+            "imagen1 imagen2 imagen3"
+            "texto1 texto2 texto3"
+            "imagen4 imagen5 imagen6"
+            "texto4 texto5 texto6";
+        /* 4. Espaciado entre elementos */
+        gap: 15px;
+        /* 5. Ajustamos márgenes */
+        margin-left: 5%;
+        margin-right: 5%;
+        img:hover {
+                transform: none; /* Eliminamos el efecto hover en móviles */
+            }
+        }
+    }
+    } 
+    
+    /* MATES */
+    .tit-mates {
+        font-size: 2.2rem;
+    }
+    
+    .grid-mates {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 20px;
+        
+        img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        p {
+            font-size: 1.4rem;
+            text-align: left;
+        }
+    }
+    
+    /* NOSOTROS */
+    .nosotros {
+        font-size: 1.5rem;
+    }
+    
+    .tit-nos {
+        font-size: 2.5rem;
+    }
+    
+    .carousel-inner {
+        width: 80%;
+        left: 10%;
+    }
+    
+    /* PRODUCTOS */
+    .tit-produ {
+        font-size: 2.2rem;
+    }
+    
+    .grid-productos {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 20px;
+        
+        img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        p {
+            font-size: 1.4rem;
+            text-align: left;
+        }
+    }
+    
+    /* ENVIOS */
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .codpost {
+        font-size: 1.5rem;
+        margin-left: 25%;
+    }
+    
+    .mapa {
+        width: 80%;
+        height: 300px;
+        left: 10%;
+    }
+    
+    .formulario {
+        width: 70%;
+        margin-left: 15%;
+        
+        .nomb-env,
+        .email-env,
+        .area-text {
+            font-size: 1.2rem;
+        }
+    }
+    
+    /* FOOTER */
+    footer {
+        .pie {
+            font-size: 1.8rem;
+            
+            p {
+                display: block;
+                font-size: 1.2rem;
+            }
+            
+            .contacto {
+               display: none;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+   //INDEX
+ body {
+    header {
+
+   .navbar-toggler{
+    display: flex;
+    margin-left: auto;
+    position: relative;
+    bottom: 48px;
+   }
+    .logo {
+        display: none;
+    }
+
+    .navbar-brand {
+        color: white;
+        font-size: 1.8rem; 
+        margin-right: 0; 
+        font-weight: bold;
+        text-shadow: -2px 3px 2px rgba(0,0,0,0.7);
+        padding-top: 40px;
+    }
+
+    .nav-link {
+        color: antiquewhite;
+        font-size: 1.2rem; 
+    }
+
+    li {
+        font-size: 1.2rem; 
+        font-weight: bold;
+    }
+ }
+    /* Main - Adaptación para móviles */
+    main {
+        margin-bottom: 15%; 
+        
+        div {
+
+            .videomates {
+                margin-top: 30px;
+                margin-left: 5%;
+                width: 90%; 
+            }
+        }
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 2rem; 
+            text-decoration: underline azure;
+        }
+        
+        .contenedor-grid.index {
+            display: block; 
+            grid-template-areas: none;
+            grid-template-columns: none;
+            grid-template-rows: none;
+            
+            p {
+                color: #1E201E;
+                font-weight: bold;
+                margin-top: 5%;
+                font-size: 1.2rem; 
+                margin-left: 0;
+                text-align: center;
+            }
+            
+            p:hover {
+                color: #758066;
+                text-decoration: underline;
+            }
+            
+            img {
+                height: auto; 
+                width: 90%;
+                max-width: 300px; 
+                margin: 5% auto; 
+                display: block;
+                border-radius: 10px;
+            }
+            
+            img:hover {
+                transform: none; 
+            }
+        }
+    }
+        
+        
+            //Fin de index
+            //MATES
+        .tit-mates {
+            margin: 0.5%;
+            text-decoration: underline azure;
+            margin-top: 2%;
+            text-align: center; 
+            font-size: 1.8rem; 
+        }
+
+        .grid-mates {
+            display: block; 
+        
+        img {
+            border-radius: 10px;
+            width: 90%; 
+            max-width: 300px; 
+            height: auto; 
+            margin: 5% auto; 
+            display: block; 
+        }
+        
+            img:hover {
+                transform: none; 
+            }
+            
+            p {
+                margin: 5% auto; 
+                font-weight: bold;
+                font-size: 1.2rem; 
+                text-align: center; 
+                width: 90%;
+            }
+            
+            p:hover {
+                text-decoration: underline;
+                color: azure;
+            }
+        }
+            //fin de mates
+
+
+            //nosotros
+        .nosotros {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 3%; 
+            margin-bottom: 10%; 
+            color: #1E201E;
+            font-size: 1.2rem;
+        }
+
+        .tit-nos {
+            text-align: center;
+            font-weight: bold;
+            margin-top: 5%; 
+            font-size: 2rem; 
+            animation-name: efecto;
+            animation-iteration-count: 1;
+            animation-duration: 2s; 
+        }
+
+        @keyframes efecto {
+            0% {
+                color: rgb(10, 104, 10);
+                transform: translateX(-100px); 
+            }
+            50% {
+                color: #CA7842;
+            }
+            100% {
+                color: #758066;
+            }
+        }
+
+        .subtitulo {
+            margin-left: 0; 
+            text-decoration: underline rgb(121, 150, 106);
+            text-align: center; 
+            animation: desliz;
+            animation-timing-function: 1;
+            animation-duration: 1s; 
+            font-size: 1.5rem; 
+        }
+
+        @keyframes desliz {
+            0% {
+                transform: translateX(80px); 
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        .carousel-inner {
+            display: flex;
+            position: relative;
+            left: 0; 
+            width: 95%; 
+            max-width: 100%; 
+            height: auto; 
+            margin: 0 auto; 
+            background-size: contain;
+        }
+
+        .promo {
+            font-size: 1.1rem; 
+            text-align: center; 
+            padding: 0 5%; 
+        }
+
+        p {
+            font-size: 1.2rem; 
+            margin-left: 0;
+            font-weight: bolder;
+            text-align: center; 
+            padding: 0 5%; 
+        }
+            //fin de nosotros
+
+
+                //productos
+        .tit-produ {
+        margin: 3%;
+        text-align: center;
+        text-decoration: underline azure;
+        font-size: 1.8rem; 
+        }
+
+        .grid-productos {
+        display: block; 
+        margin-left: 0;
+        
+        img {
+            height: auto; 
+            width: 90%; 
+            max-width: 300px; 
+            margin: 20px auto;
+            display: block; 
+            border-radius: 10px;
+        }
+        
+        img:hover {
+            transform: none; 
+        }
+        
+        p {
+            margin: 10px auto 30px; 
+            font-size: 1.2rem; 
+            text-align: center; 
+            width: 90%; 
+        }
+        
+        p:hover {
+            text-decoration: underline;
+            color: azure;
+        }
+    }
+
+
+            //fin de productos
+
+
+            //envios
+        h1 {
+            text-align: center;
+            margin-top: 15px;
+            font-weight: bolder;
+            font-size: 2rem;
+            text-decoration: underline #94675f;
+        }
+
+        .codpost {
+            margin: 3% auto; 
+            font-weight: bolder;
+            font-size: 1.2rem; 
+            text-align: center; 
+        }
+
+        .visit {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.5rem;
+            text-decoration: underline azure;
+        }
+
+        .mapa {
+            display: block;
+            width: 90%; 
+            max-width: 100%;
+            height: 250px;
+            margin: 20px auto;
+            box-shadow: 0px 5px 5px -2px rgba(117,128,102,0.75);
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+        }
+
+        .exterior {
+            text-align: center;
+            margin-top: 5%; 
+            text-decoration: underline #758066;
+            font-size: 1.8rem; 
+        }
+
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            font-size: 1rem;
+            padding: 15px;
+            width: 90%; 
+            max-width: 100%;
+            margin: 0 auto; 
+            
+            .nomb-env,
+            .email-env,
+            .area-text {
+                text-align: center;
+                font-size: 1rem;
+                width: 100%; 
+                margin: 10px 0; 
+            }
+            
+            input, textarea {
+                width: 100%;
+                max-width: 100%; 
+        }    
+
+
+
+
+
+
+
+
+
+
+
+
+            //fin de mates
+    footer{
+        h2 {
+            text-align: center;
+            margin-left: 0px;
+        }
+        .pie{ 
+            font-size: x-large;
+            margin: 0px;
+            p {
+                display: none;
+            }
+            .contacto{
+                margin-right: 8px;
+                width: 40px;
+                height: 40px;
+                
+            }
+
+        }   
+
+
+
+
+    }
+
+
+}
+}
 }
